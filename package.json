@@ -1,0 +1,14 @@
+{
+  "name": "workshop-dev",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "nunjucks": "^3.2.1"
+  }
+}
