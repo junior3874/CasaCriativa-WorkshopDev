@@ -1,0 +1,42 @@
+
+.idea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 15px;
+    background-color: white;
+    margin: 2.4rem auto;
+    align-items: center;
+}
+
+.idea img {
+   width: 64px;
+   height: 64px;
+}
+
+.idea .content-idea h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.idea .content-idea h2 {
+    font-size: 1.4rem;
+}
+.idea .content-idea .content-text-idea p{
+    font-size: 1.2rem;
+}
+
+.idea a {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    outline: none;
+    color: deeppink;
+}
+@media (min-width: 860px){
+    .idea{
+        width: 400px;
+    }
+}

@@ -1,0 +1,118 @@
+#modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FF5E84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: scroll;
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+#modal form {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100vw;
+    height: auto;
+    padding: 1rem;
+   
+}
+#modal form h1{
+    color: white;
+    margin: 2.4rem auto;
+}
+
+
+
+#modal form .field-group {
+   display: flex;
+   flex-direction: column;
+}
+
+#modal form .field {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#modal form .field-group .field input, textarea{
+    height: 4.2rem;
+    padding: 1.4rem;
+    margin:0 2.4rem 0 2.4rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+textarea{
+    height: 10.6rem !important;
+    width: auto !important;
+}
+#modal form .field-group .field label{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+    margin:0 2.4rem 0 2.4rem;
+}
+
+#modal .buttons-modal {
+    margin-top: 5.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.2rem;
+}
+
+#modal .buttons-modal a {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: deeppink;
+    background-color: white;
+    border-radius: 0.5rem;
+    width: 25%;
+    height: 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#modal .buttons-modal button{
+    font-size: 2.2rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: deeppink;
+    color: white;
+    width: 25%;
+    height: 3.4rem;
+    border-radius: 0.5rem;
+}
+@media (min-width: 700px){
+    #modal form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #modal form .field-group{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50%;
+        
+    }
+    #modal form .field{
+        margin-top: 3.4rem;
+    }
+    #modal form .field-group div:nth-child(n+3):nth-child(-n+6){
+        grid-column: 1 / 3;
+    }
+    textarea{
+        height: 20.6rem !important;
+        
+    }
+};
