@@ -1,14 +1,13 @@
 import path from 'path';
-import knex from 'knex';
+
 
 module.exports = {
   client: 'mysql',
   connection: {
     host : 'localhost',
-    user : 'root',
-    password : 'memoria53',
-    database : 'idea',
-    insecureAuth : 'true'
+    user : 'username',
+    password : 'password',
+    database : 'database_name',
   },
 
   migrations: {
