@@ -4,13 +4,13 @@ const db = knex({
     client: 'mysql',
     connection: {
       host : 'localhost',
-      user : 'root',
-     password : 'memoria53',
-      database : 'idea',
+      user : 'database_user',
+      password : 'database_password',
+      database : 'database_name',
     },
     useNullAsDefault: true,
   });
   
-  module.exports = db;
+module.exports = db;
 
   
