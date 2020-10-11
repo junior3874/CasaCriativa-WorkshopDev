@@ -40,6 +40,11 @@
     margin-top: 1.2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    
+}
+#modal form .field:nth-child(1){
+    align-items: center;
 }
 
 
